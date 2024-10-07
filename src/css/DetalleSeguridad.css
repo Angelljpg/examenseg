@@ -1,0 +1,53 @@
+.container-page {
+    margin-top: 80px; /* Ajusté el margen superior para que sea un poco menos */
+    padding: 30px; /* Incrementé el padding para un mayor espacio interno */
+    max-width: 900px; /* Aumenté el ancho máximo para mejor legibilidad */
+    margin-left: auto; /* Centrado horizontal */
+    margin-right: auto; /* Centrado horizontal */
+    font-family: 'Roboto', sans-serif; /* Cambié la fuente a una más moderna */
+    background-color: #f9f9f9; /* Añadí un fondo suave para destacar el contenido */
+    border-radius: 8px; /* Bordes redondeados para suavizar el diseño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+}
+
+h1, h2, h3 {
+    color: #2C3E50; /* Color más oscuro para títulos, en lugar de #333 */
+    margin-top: 25px; /* Aumenté un poco el margen superior */
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna y elegante para los títulos */
+}
+
+p {
+    line-height: 1.8; /* Aumenté el espaciado entre líneas para mayor legibilidad */
+    margin-bottom: 20px; /* Mayor margen entre párrafos */
+    color: #666; /* Color ligeramente más oscuro para un mejor contraste */
+}
+
+h2 {
+    border-bottom: 3px solid #1ABC9C; /* Línea de separación con un color verde moderno */
+    padding-bottom: 8px; /* Más espacio debajo del subtítulo */
+    font-size: 1.8rem; /* Tamaño de fuente más grande para subtítulos */
+    font-weight: 600; /* Más peso para dar mayor énfasis */
+}
+
+h3 {
+    margin-top: 20px; /* Más espacio sobre los subtítulos */
+    color: #2980B9; /* Azul más vibrante para los subtítulos */
+    font-size: 1.5rem; /* Tamaño ligeramente mayor para los subtítulos */
+    font-weight: 500; /* Peso medio para los subtítulos */
+}
+
+strong {
+    color: #C0392B; /* Color rojo más intenso para destacar textos importantes */
+    font-weight: bold; /* Mantener el texto en negrita */
+}
+
+.container-page footer {
+    margin-top: 40px; /* Mayor separación del contenido principal */
+    text-align: center; /* Centré el texto del pie de página */
+    font-size: 0.9rem; /* Texto más pequeño para el pie de página */
+    color: #7F8C8D; /* Color gris suave para el pie de página */
+}
+
+footer p {
+    margin: 0.2rem 0; /* Espaciado entre las líneas del pie de página */
+}

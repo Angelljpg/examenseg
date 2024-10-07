@@ -1,0 +1,87 @@
+/* Asegura que el body ocupe el 100% de la pantalla */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif; /* Cambié la fuente por algo más moderno */
+  background-color: #f4f7f6; /* Fondo suave para mejorar la legibilidad */
+  color: #333; /* Texto principal en un tono gris oscuro */
+}
+
+/* El contenido principal ocupará todo el espacio disponible */
+.container-page {
+  flex: 1;
+  max-width: 960px; /* Aumenté el ancho máximo para mayor comodidad */
+  margin: 20px auto; /* Añadí margen superior para darle más espacio al contenido */
+  padding: 30px; /* Aumenté el padding para mayor espaciamiento */
+  background-color: #ffffff; /* Fondo blanco para destacar el contenido */
+  border-radius: 10px; /* Bordes suaves y redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #2c3e50; /* Cambié el fondo del footer a un gris oscuro */
+  color: #ecf0f1; /* Texto claro para mayor contraste */
+  text-align: center;
+  padding: 20px 10px; /* Más espacio para un footer más destacado */
+  width: 100%;
+  position: static; /* Cambié el posicionamiento para que el footer solo esté al final si no hay mucho contenido */
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Sombra para separar visualmente del contenido */
+}
+
+.mt-5 {
+  margin-top: 3.5rem; /* Un poco más de espacio en la parte superior */
+}
+
+h1 {
+  font-size: 2.8rem; /* Tamaño más grande para el título principal */
+  color: #1A5276; /* Color azul oscuro para los títulos */
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-weight: 700; /* Mayor peso para un título destacado */
+}
+
+h2 {
+  font-size: 1.9rem; /* Tamaño ligeramente más grande */
+  color: #3498db; /* Color azul claro */
+  margin-top: 2rem;
+  border-bottom: 2px solid #3498db; /* Línea decorativa debajo de los subtítulos */
+  padding-bottom: 5px; /* Espaciado entre subtítulo y contenido */
+}
+
+p {
+  font-size: 1.2rem; /* Tamaño de texto ligeramente mayor */
+  line-height: 1.8; /* Espaciado más amplio entre líneas */
+  color: #444; /* Color de texto más oscuro para mejor contraste */
+  margin-bottom: 1.8rem; /* Mayor separación entre párrafos */
+}
+
+footer p {
+  text-align: center;
+  font-size: 1rem; /* Aumenté el tamaño del texto en el footer */
+  color: #bdc3c7; /* Texto en color gris claro */
+}
+
+@media (max-width: 768px) {
+  /* Adaptabilidad para pantallas más pequeñas */
+  .container-page {
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 2.2rem; /* Ajusté el tamaño para pantallas pequeñas */
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+}

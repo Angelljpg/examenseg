@@ -1,0 +1,90 @@
+/* Asegura que el body ocupe el 100% de la pantalla */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Merriweather', serif; /* Fuente serif para un aspecto más formal */
+  background-color: #f4f7f6; /* Fondo claro */
+  color: #333; /* Texto principal en gris oscuro */
+}
+
+/* Contenedor principal */
+.container-page {
+  flex: 1;
+  max-width: 1000px; /* Mayor ancho para texto formal */
+  margin: 20px auto;
+  padding: 40px; /* Aumentado el padding */
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 8px; /* Bordes suaves */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más marcada para mayor seriedad */
+}
+
+/* Estilos para títulos */
+h1 {
+  font-size: 2.6rem; /* Título principal un poco más pequeño para mayor formalidad */
+  color: #2C3E50; /* Azul oscuro */
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-weight: 700; /* Mayor énfasis */
+}
+
+h2 {
+  font-size: 1.7rem; /* Subtítulos más ajustados */
+  color: #2980B9; /* Azul claro */
+  margin-top: 2rem;
+  border-bottom: 1px solid #2980B9; /* Línea sutil debajo del subtítulo */
+  padding-bottom: 5px;
+}
+
+/* Estilos para párrafos */
+p {
+  font-size: 1.15rem; /* Texto ligeramente más pequeño */
+  line-height: 1.7; /* Espaciado entre líneas */
+  color: #444; /* Gris oscuro para texto */
+  margin-bottom: 1.8rem;
+}
+
+/* Estilos para los textos en negrita */
+strong {
+  color: #C0392B; /* Resaltado en rojo */
+  font-weight: bold;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #2c3e50; /* Fondo oscuro para el footer */
+  color: #ecf0f1; /* Texto claro */
+  text-align: center;
+  padding: 20px 10px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  font-size: 0.85rem; /* Texto más pequeño para mayor formalidad */
+  margin: 0.5rem 0;
+  color: #bdc3c7;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .container-page {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,100 @@
+/* Configuración básica para el body y html */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Merriweather', serif; /* Fuente formal y profesional */
+  background-color: #f5f5f5; /* Fondo suave para mejor legibilidad */
+  color: #2C3E50; /* Texto en gris oscuro */
+}
+
+/* Contenedor principal */
+.container-page {
+  flex: 1;
+  max-width: 1000px; /* Ancho máximo más amplio para mayor legibilidad */
+  margin: 30px auto; /* Centrando el contenedor */
+  padding: 40px; /* Espaciado interno amplio */
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 10px; /* Bordes suaves */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Estilos para títulos */
+h1 {
+  font-size: 2.5rem; /* Tamaño del título principal */
+  color: #1A5276; /* Color azul oscuro para dar seriedad */
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700; /* Negrita para destacar el título */
+}
+
+h2 {
+  font-size: 1.9rem; /* Tamaño de los subtítulos */
+  color: #2980B9; /* Azul claro para los subtítulos */
+  margin-top: 2rem;
+  border-bottom: 2px solid #2980B9; /* Línea debajo del subtítulo */
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.6rem; /* Subtítulos menores */
+  color: #2980B9; /* Azul para consistencia con el tema */
+  margin-top: 1.5rem;
+}
+
+/* Estilos para párrafos */
+p {
+  font-size: 1.15rem; /* Tamaño de fuente ligeramente mayor */
+  line-height: 1.7; /* Espaciado entre líneas */
+  color: #34495E; /* Gris más oscuro para mejor contraste */
+  margin-bottom: 1.5rem;
+}
+
+/* Estilos para los textos en negrita */
+strong {
+  color: #C0392B; /* Rojo oscuro para destacar */
+  font-weight: bold;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #2C3E50; /* Fondo oscuro */
+  color: #ecf0f1; /* Texto claro */
+  text-align: center;
+  padding: 20px 10px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Sombra para separar el footer */
+}
+
+footer p {
+  font-size: 0.9rem; /* Texto más pequeño en el footer */
+  color: #bdc3c7; /* Texto gris claro */
+  margin: 0.5rem 0;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .container-page {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

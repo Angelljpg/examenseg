@@ -1,0 +1,88 @@
+/* Contenedor de la barra de navegación */
+.navbar-container {
+    background-color: #f8f9fa; /* Fondo claro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease; /* Transición suave para ocultar/mostrar */
+}
+
+/* Ocultar la barra de navegación */
+.hide {
+    transform: translateY(-100%); /* Mueve la barra fuera de la vista */
+}
+
+/* Mostrar la barra de navegación */
+.show {
+    transform: translateY(0); /* Asegura que la barra esté visible */
+}
+
+/* Título en la barra de navegación */
+.navbar-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2C3E50; /* Azul oscuro */
+}
+
+/* Icono de la estrella */
+.icon-star {
+    color: #FFD700; /* Color dorado */
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Icono de alerta */
+.icon-alert {
+    color: #e74c3c; /* Color rojo para resaltar la alerta */
+    font-size: 1.5rem; /* Tamaño del icono */
+    margin-right: 10px; /* Espacio a la derecha del icono */
+    cursor: pointer; /* Cambia el cursor para indicar interactividad */
+}
+
+/* Estilos para los botones */
+.btn-custom {
+    background-color: #3498db; /* Color azul */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #2980b9; /* Azul más oscuro al hacer hover */
+}
+
+/* Icono de inicio */
+.icon-home {
+    color: #2980B9; /* Azul claro */
+    font-size: 1.5rem;
+}
+
+/* Sombra en la barra de navegación */
+.shadow-sm {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Clase activa para el botón seleccionado */
+.active {
+    background-color: #2980b9; /* Color distinto para el botón activo */
+    font-weight: bold;
+    border-bottom: 2px solid #fff; /* Línea de fondo para resaltar */
+}
+
+/* Opcional: Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 10px; /* Ajustar padding en pantallas pequeñas */
+    }
+
+    .navbar-title {
+        font-size: 1.1rem; /* Reducir tamaño del texto en pantallas pequeñas */
+    }
+
+    .btn-custom {
+        font-size: 0.9rem; /* Ajustar tamaño de los botones */
+    }
+}
